@@ -117,12 +117,21 @@ body{
 }
 
 @media only screen and (max-width: 600px ){
+    .banner{
+        flex-direction: column;
+    }
+    .banner__img{
+        width: 100%;
+    }
     .banner__name{
         width: 100%;
-        
+        display: block;
     }
     .banner__name p{
-        font-size: 35px;
+        font-size: 15px;
+    }
+    .banner__name h3 {
+        font-size: 25px;
     }
     .about{
         display: block;
@@ -134,8 +143,8 @@ body{
         width: 100%;
         height: 40vh;
     }
-    .footer{
+    /* .footer{
         align-items: flex-start;
         flex-direction: column;
-    }
+    } */
 }
