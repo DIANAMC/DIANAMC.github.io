@@ -94,7 +94,6 @@ body{
 }
 .section2{
     width: 100%;
-    height: 90vh;
     display: flex;
     
 }
@@ -157,7 +156,7 @@ body{
     position: absolute;
     display: flex;
     justify-content: center;
-    width: 100%;
+    width: 80%;
     margin: 60px;
 }
 
@@ -167,7 +166,6 @@ body{
     width: 100%;
     height: 90vh;
     overflow: scroll;
-    padding: 30px;
     position: relattive;
     background-color: #F6E5F5;
     display: flex;
@@ -246,7 +244,19 @@ body{
     text-decoration: underline;
 }
 @media only screen and (max-width: 600px ){
-    
+    .section1__name{
+        width: 100%;
+    }
+    .section2{
+        display: block;
+    }
+    .section2__text{
+        width: 100%;
+    }
+    .section2__img{
+        width: 100%;
+        height: 40vh;
+    }
     .footer{
         align-items: flex-start;
         flex-direction: column;
