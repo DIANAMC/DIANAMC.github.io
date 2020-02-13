@@ -133,6 +133,10 @@ body{
     .banner__name h3 {
         font-size: 25px;
     }
+    .banner__name--box{
+        padding: 2em 1.8em;
+}
+    }
     .about{
         display: block;
     }
