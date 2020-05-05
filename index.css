@@ -115,7 +115,7 @@ body{
 .banner__socail ul, li{
     list-style: none;
 }
-
+  
 @media only screen and (max-width: 600px ){
     .banner{
         flex-direction: column;
