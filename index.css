@@ -256,6 +256,21 @@ h3{
   height: inherit;
   flex-wrap: inherit;
 }
+.banner__social a{
+  text-decoration: none;
+  line-height: inherit;
+  cursor: pointer;
+  color: black;
+  list-style: none;
+  padding: 10px;
+
+}
+
+.banner__social {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
 
 .footer{
   height: 60px;
