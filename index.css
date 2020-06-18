@@ -94,6 +94,10 @@ h3{
 .hero-image{
   object-fit: cover;
 }
+.hero_image {
+  width: 26%;
+
+}
 .project{
   box-shadow: 2px 2px 5px #999;
    padding: 20px;
