@@ -53,6 +53,8 @@ h3{
   height: 90px;
   align-items: center;
   box-shadow: 2px 2px 5px #999;
+  flex-wrap: wrap;
+
 
 }
 .header ul{
@@ -90,6 +92,8 @@ h3{
   background-position-x: right; */
   display: flex;
   align-items: center;
+  flex-wrap: wrap;
+
 }
 .hero-image{
   object-fit: cover;
@@ -109,6 +113,8 @@ h3{
   justify-content: space-between;  
   border-radius: 10px;
   margin-bottom: 15px;
+  flex-wrap: wrap;
+
 
 
 }
@@ -127,22 +133,21 @@ h3{
   font-size: 18px;
 }
 .project_details{
-  width:  500px;
-  /* display: inline-block;
-  flex-shrink: 0;
-  justify-content: space-between; */
+  width:  50%;
+
 }
 .project_description{
   font-size: 20px;
 }
 .project_img{
+  width: 50%;
   display: inline-block;
   flex-shrink: 0;
   justify-content: space-between;
 }
 .project_img img{
+  max-width: 100%;
   width: 450px;
-  /* margin-left: 50px; */
 }
 
 .portafolio{
@@ -198,6 +203,8 @@ h3{
   display: flex;
   align-items: center;
   justify-content: space-between;
+  flex-wrap: wrap;
+
 }
 
 
@@ -246,19 +253,25 @@ h3{
   margin-top: 10px;
 }
 
-.form-email h3 { 
-  font-family: 'Source Sans Pro', sans-serif;
+.wt { 
+font-size: white; 
+padding: 1em 0; 
 }
 
 .container {
   /* border: 1px solid red; */
-  width: 1000px;
+  max-width: 1000px;
+  flex: 1;
+
+  /* width: 1000px; */
   margin: 0 auto;
   display: inherit;
   justify-content: inherit;
   align-items: inherit;
-  height: inherit;
+  /* height: inherit; */
   flex-wrap: inherit;
+  flex-wrap: wrap;
+
 }
 .banner__social a{
   text-decoration: none;
@@ -283,8 +296,121 @@ h3{
   color: white;
   justify-content: space-between;
   align-items: center;
+  flex-wrap: wrap;
+
   
 }
 .footer a {
   color: white;
+  
+}
+form h3, .form_email{
+  color: #fafafa;
+}
+
+@media screen and (max-width: 1024px){
+  .event{
+    width: auto;
+    flex-shrink: initial;
+  }
+  .event img{
+    width: 100%;
+  } 
+  .container{
+    padding: 0 1em;
+  }
+}
+@media screen and (max-width: 767px){
+  .hero{
+    height: auto;
+    position: relative;
+    padding: 20px 0px;
+    text-align: right;
+
+  }
+  .hero_image{
+    position: absolute;
+    z-index: 1;
+    right: 0;
+
+  }
+  h1{
+    font-size: 1em;
+    z-index: 2;
+  }
+.header{
+  display: block;
+  height: auto;
+}
+.header ul{
+  display: block;
+}
+.header ul li{
+  height: 30px;
+}
+.header a{
+  justify-content: center;
+}
+.header .logo{
+  text-align: center;
+}
+.project{
+  display: block;
+}
+.project_details{
+  width: auto;
+  font-size: 16px;
+}
+.project_img{
+  width: auto;
+  text-align: center;
+  display: block;
+}
+.project_date, .project_url{
+  margin: .4em 0;
+}
+.project_title{
+  font-size: 1.5em;
+}
+.project_url{
+  font-size: 1em;
+}
+.project_date{
+  font-size: 1em;
+}
+.project_description{
+  font-size: .8em;
+  margin: 0.7em 0;
+}
+
+}
+@media screen and (max-width: 480px){
+  .project_details{
+    width: auto;
+    font-size: 12px;
+  }
+  .event_detail{
+    margin: -2em .5em .5em;
+    padding: 1em;
+  }
+  .contact{
+    height: auto;
+    padding: 1em 0;
+    text-align: center;
+    display: block;
+  }
+  .contact button{
+    margin: 1em auto;
+  }
+  .footer{
+    display: block;
+    text-align: center;
+    border: 1px solid transparent;
+  }
+}
+@media screen and (max-width: 320px){
+  .project_details{
+    width: auto;
+    font-size: 11px;
+  }
 }
