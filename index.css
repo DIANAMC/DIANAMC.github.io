@@ -14,6 +14,7 @@ figure{
 body {
   font-family: 'Source Sans Pro', sans-serif;
   margin: 0;
+  background-color: #2B4F6E;
 }
 h1,h2,h3,h4,h5,h6 {
   font-family: 'Nunito Sans', sans-serif; 
@@ -28,26 +29,26 @@ h1{
   align-items: center;
   margin: 0;
 }
-h1 strong{
-  color: black;
+h2 strong{
+  color: #E9EDF7 ;
 }
 h2{
-  color:#999;
-  text-transform: uppercase;
+  color:#99A8C0;
   font-family: 'Source Sans Pro', sans-serif;
   font-size: 28px;
   font-weight: bold;
   margin-bottom: 30px;
+  margin-top: 30px;
 }
 h3{
-  color: #31afb4;
+  color: #2B4F6E;
 }
 .logo img{
   height: 90px;
 }
 .header {
   background-color: white;
-  color: #31afb4;
+  color: #2B4F6E;
   display: flex;
   justify-content: space-between;
   height: 90px;
@@ -69,7 +70,7 @@ h3{
   padding: 0;
 }
 .header a {
-  color: #31afb4;
+  color: #2B4F6E;
   text-decoration: none;
   /* height: inherit; */
   display: flex;
@@ -83,7 +84,8 @@ h3{
 .hero{
   height:  300px;
   padding: 20px;
-  background-color: #31afb4;
+  background-image: ;
+  background-color: #2B4F6E;
   justify-content: space-between;
   /* background-image: url('img/latinity.jpg'); */
   background-color: fafafa;
@@ -103,8 +105,8 @@ h3{
 
 }
 .project{
-  box-shadow: 2px 2px 5px #999;
-   padding: 20px;
+  box-shadow: 2px 2px 5px #99A8C0;
+  padding: 20px;
   background-color: white;
   /* box-sizing: border-box; */
   display: flex;
@@ -151,7 +153,7 @@ h3{
 }
 
 .portafolio{
-  background-color: #fafafa;
+  background-color: #2B4F6E;
   padding: 20px;
 }
 .event{
@@ -197,7 +199,7 @@ h3{
 }
 
 .contact {
-  background-color: #31afb4;
+  background-color: #2B4F6E;
   color: white;
   height: 150px;
   display: flex;
@@ -261,7 +263,7 @@ padding: 1em 0;
 .container {
   /* border: 1px solid red; */
   max-width: 1000px;
-  flex: 1;
+  justify-content: center;
 
   /* width: 1000px; */
   margin: 0 auto;
@@ -272,6 +274,18 @@ padding: 1em 0;
   flex-wrap: inherit;
   flex-wrap: wrap;
 
+}
+.hero_description{
+  max-width: 600px;
+  
+}
+
+.imgPersonal{
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin: 30px;
 }
 .banner__social a{
   text-decoration: none;
@@ -291,7 +305,7 @@ padding: 1em 0;
 
 .footer{
   height: 60px;
-  background-color: #999;
+  background-color: #99A8C0;
   display: flex;
   color: white;
   justify-content: space-between;
@@ -407,10 +421,16 @@ form h3, .form_email{
     text-align: center;
     border: 1px solid transparent;
   }
+  .imgPersonal{
+    margin: auto;
+  }
 }
 @media screen and (max-width: 320px){
   .project_details{
     width: auto;
     font-size: 11px;
+  }
+  .imgPersonal{
+    margin: auto;
   }
 }
